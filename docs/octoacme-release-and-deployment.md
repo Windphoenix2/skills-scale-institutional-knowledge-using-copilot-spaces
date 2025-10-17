@@ -11,23 +11,35 @@ Standardize how OctoAcme releases features to production to reduce risk and impr
 ## Pre-release requirements
 - All acceptance criteria met and PRs merged
 - Passing CI and security scans
-- Release notes drafted
-- Rollback / mitigation plan documented
-- Smoke tests prepared
+- QA Lead sign-off on quality criteria
+- Business Analyst confirms business requirements validated
+- UX/UI Designer approves design implementation (if UI changes)
+- Release notes drafted (by Product Manager with input from Business Analyst)
+- Rollback / mitigation plan documented by Release Manager
+- Smoke tests prepared by QA Lead
 
 ## Deployment Checklist
-- [ ] Deployment window scheduled (if needed)
-- [ ] Backup or snapshot (if applicable)
-- [ ] Deploy to staging and run smoke tests
+- [ ] Release Manager schedules deployment window (if needed)
+- [ ] Backup or snapshot completed (if applicable)
+- [ ] Deploy to staging environment
+- [ ] QA Lead runs smoke tests on staging
+- [ ] Business Analyst validates critical business workflows (if applicable)
+- [ ] Release Manager authorizes production deployment
 - [ ] Deploy to production (automated pipeline preferred)
 - [ ] Run post-deploy verifications
-- [ ] Announce release to stakeholders and support
+- [ ] QA Lead confirms production smoke tests pass
+- [ ] Release Manager announces release to stakeholders and support
+- [ ] Business Analyst notifies business users of changes
 
 ## Rollback & Incident Playbook
 - If a deployment fails or causes a critical issue:
-  - Trigger incident response and notify on-call
-  - Rollback to last known-good release if necessary
+  - Release Manager triggers incident response and notifies on-call
+  - QA Lead assesses severity and impact
+  - Release Manager executes rollback to last known-good release if necessary
+  - Project Manager coordinates with stakeholders
+  - Business Analyst assesses business impact
   - Triage root cause and capture action items
+  - Schedule retrospective to prevent recurrence
 
 ## Release Notes Template
 - Release name / number:

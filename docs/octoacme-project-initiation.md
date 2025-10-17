@@ -28,10 +28,21 @@ Whenever a new project idea or feature proposal is ready to be explored.
 - Suggested timeline / milestones:
 - Quick risks & dependencies:
 - Proposed team / roles:
+  - Project Manager:
+  - Product Manager:
+  - Developers:
+  - QA Lead:
+  - UX/UI Designer (if UI changes):
+  - Release Manager:
+  - Business Analyst (if business process changes):
 
 ## Initiation Checklist
 - [ ] One-pager completed and reviewed by Product Lead
 - [ ] Sponsor / Stakeholder alignment (email or meeting)
+- [ ] Core team roles identified (PM, PdM, Dev Lead, QA Lead, etc.)
+- [ ] Business Analyst consulted if business process impact expected
+- [ ] UX/UI Designer engaged if user interface changes planned
+- [ ] Release Manager notified of expected timeline
 - [ ] Decision: Approve to move into planning?
 - [ ] Create repo or project board skeleton
 - [ ] Add initial artifacts to repo (docs/ or .copilot/)
